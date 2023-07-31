@@ -1,0 +1,6 @@
+--2023-07-31 15:03:56--  https://media.istockphoto.com/id/1404853488/fr/vectoriel/croquis-dun-jeune-homme-avec-son-vieux-parent-marchant-%C3%A0-lext%C3%A9rieur.jpg?s=612x612
+Resolving media.istockphoto.com (media.istockphoto.com)... 143.204.231.46, 143.204.231.90, 143.204.231.98, ...
+Connecting to media.istockphoto.com (media.istockphoto.com)|143.204.231.46|:443... connected.
+HTTP request sent, awaiting response... 400 Bad Request
+2023-07-31 15:03:57 ERROR 400: Bad Request.
+

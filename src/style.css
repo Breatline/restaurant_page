@@ -1,4 +1,96 @@
-.hello{
-    color: red;
-    border: solid black;
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    flex: 1;
+    color: white;
+    align-items: center;
+    width: 100%;
+}
+
+nav > * {
+    all: unset;
+    cursor: pointer;
+}
+
+.btn-menu{
+    margin: 0 1rem;
+}
+
+nav > *:hover{
+    border-bottom: solid white;
+    transform: translateY(-10%);
+}
+
+.main {
+    display: flex;
+    flex: 1;
+    border: solid green;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainText{
+    background-color: rgba(99, 97, 97, 0.913);
+    width: 50%;
+    position: absolute;
+}
+
+.background-img{
+    background: url(./images/fancy-wallpaper.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+.perefils{
+    background: url(./images/perefils.jpg);
+    width: 20rem;
+    height: 20rem;
+    float: left;
+}
+
+.text{
+    color: white;
+    font-size: 30px;
+}
+
+.svgFooter{
+    width: 3rem;
+    height: 3rem;
+}
+
+.contact{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+#twitter{
+    margin: 0 2rem;
+}
+
+.footer{
+    flex-direction: column;
+    border: solid yellow;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
 }

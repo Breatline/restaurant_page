@@ -1,10 +1,4 @@
-import './style.css'
-const element = document.createElement('div')
+import websiteCompilator from './home';
+import './style.css';
 
-function component(){
-    element.innerHTML = "Hello";
-    element.classList.add('hello');
-    return element
-}
-
-document.body.appendChild(component())
+websiteCompilator();
