@@ -2,18 +2,16 @@ import instagramSVG from './images/instagram.svg';
 import twitterSVG from './images/twitter.svg';
 import emailSVG from './images/email.svg';
 import './style.css';
-import createHome from './home';
 import loadHome from './home';
+import loadMenu from './menu';
 
 
-function setActiveButton(button){
-    const buttons = document.querySelectorAll('button');
-    buttons.forEach(button => {
-        if(button.classList.contains('active')){
-            button.classList.remove('active')
-        }
-    });
-    button.classList.add('active');
+function mainRemoving(){
+    const main = document.getElementById('main');
+
+    if(main.children.length > 0){
+        main.firstChild.remove();
+    }
 }
 
 function createHeader() {
@@ -39,16 +37,16 @@ function createNav() {
     btnHome.innerText = 'home';
 
     btnHome.addEventListener('click', () => {
-        setActiveButton(btnHome);
+        mainRemoving();
         loadHome();
     })
 
     const btnMenu = document.createElement('button');
     btnMenu.classList.add('btn-menu');
     btnMenu.innerText = 'menu';
-
     btnMenu.addEventListener('click', () => {
-        setActiveButton(btnMenu);
+        mainRemoving();
+        loadMenu();
     })
 
 

@@ -2,7 +2,9 @@ import imgPereFils from './images/perefils.jpg';
 import wallpaper from './images/fancy-wallpaper.jpg';
 
 function createHome(){
-    const main = document.getElementById('main');
+    const home = document.createElement('home');
+    home.classList.add('home');
+    home.setAttribute('id', 'home');
 
 
     const backgroundImg = document.createElement('img');
@@ -27,8 +29,8 @@ function createHome(){
     perefils.src = imgPereFils;
 
 
-    main.appendChild(backgroundImg);
-    main.appendChild(mainText);
+    home.appendChild(backgroundImg);
+    home.appendChild(mainText);
     mainText.appendChild(perefils);
     mainText.appendChild(text);
 
@@ -38,8 +40,6 @@ function createHome(){
 
 function loadHome(){
     const main = document.getElementById('main');
-
-    console.log('thomas from home');
 
     main.appendChild(createHome());
 }
