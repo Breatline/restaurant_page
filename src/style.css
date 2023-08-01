@@ -27,8 +27,8 @@ nav > * {
     cursor: pointer;
 }
 
-.btn-menu{
-    margin: 0 1rem;
+.btn-home{
+    margin-right: 1rem;
 }
 
 nav > *:hover{
@@ -68,6 +68,7 @@ nav > *:hover{
     color: white;
     font-size: 30px;
 }
+
 
 .svgFooter{
     width: 3rem;

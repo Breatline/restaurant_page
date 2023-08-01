@@ -1,4 +1,4 @@
-import websiteCompilator from './home';
+import websiteCompilator from './website';
 import './style.css';
 
 websiteCompilator();
