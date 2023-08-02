@@ -4,6 +4,7 @@ import emailSVG from './images/email.svg';
 import './style.css';
 import loadHome from './home';
 import loadMenu from './menu';
+import wallpaper from './images/fancy-wallpaper.jpg'
 
 
 function mainRemoving(){
@@ -44,6 +45,7 @@ function createNav() {
     const btnMenu = document.createElement('button');
     btnMenu.classList.add('btn-menu');
     btnMenu.innerText = 'menu';
+    
     btnMenu.addEventListener('click', () => {
         mainRemoving();
         loadMenu();

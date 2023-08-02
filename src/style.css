@@ -43,7 +43,6 @@ nav > *:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 
 .home{
@@ -66,13 +65,13 @@ nav > *:hover{
 }
 
 .background-img{
-    background: url(./images/fancy-wallpaper.jpg);
+    background-image: url(./images/fancy-wallpaper.jpg);
     background-size: cover;
     width: 100%;
 }
 
 .perefils{
-    background: url(./images/perefils.jpg);
+    background-image: url(./images/perefils.jpg);
     width: 20rem;
     height: 20rem;
     float: left;
@@ -83,6 +82,20 @@ nav > *:hover{
     font-size: 30px;
 }
 
+.menu{
+    display: grid;
+    grid-template-columns: 2 / 250px;
+    grid-template-rows: 3 / 500px;
+}
+
+.menu-item > img {
+    height: 20rem;
+    width: 20rem;
+}
+
+.menuContainer > div {
+    border: solid black;
+}
 
 .svgFooter{
     width: 3rem;
@@ -109,3 +122,4 @@ nav > *:hover{
     justify-content: center;
     align-items: center;
 }
+
